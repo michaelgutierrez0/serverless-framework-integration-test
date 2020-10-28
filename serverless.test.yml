@@ -6,6 +6,6 @@
   endpoint: {function: hello}
   request:
     body:
-      name: alice
+      name: bob
   response:
     body: "Hello, alice"
