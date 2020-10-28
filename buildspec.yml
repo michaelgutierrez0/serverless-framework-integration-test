@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - npm install serverless -g
+      - npm install
+  build:
+    commands:
+      - serverless deploy --stage $PASSING_STAGE
+  post-build:
+    commands:
+      - serverless test --stage $PASSING_STAGE
+artifacts:
+  files:
+    - '**/*'
