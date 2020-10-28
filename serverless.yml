@@ -1,7 +1,4 @@
-tenant: skierkowski
-app: greeter
-service: hello
-frameworkVersion: ">=1.46.1"
+service: serverless-integration-test
 provider:
   name: aws
   runtime: nodejs12.x
